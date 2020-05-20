@@ -1,0 +1,352 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2332396184013572851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2332396184013572854}
+  - component: {fileID: 2332396184013572855}
+  - component: {fileID: 2332396184013572848}
+  - component: {fileID: 2332396184013572849}
+  - component: {fileID: 2332396184013572850}
+  - component: {fileID: 2332396184013572853}
+  - component: {fileID: 2332396184013572852}
+  - component: {fileID: 2332396184013572747}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2332396184013572854
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332396184013572851}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &2332396184013572855
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332396184013572851}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!92 &2332396184013572848
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332396184013572851}
+  m_Enabled: 1
+--- !u!124 &2332396184013572849
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332396184013572851}
+  m_Enabled: 1
+--- !u!81 &2332396184013572850
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332396184013572851}
+  m_Enabled: 1
+--- !u!114 &2332396184013572853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332396184013572851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4da80168dabad4f4bbdbd21cd0571c58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GestureStateUpdated:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2332396184013572853}
+        m_MethodName: GestureCallback
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  GestureView: {fileID: 0}
+  MinimumNumberOfTouchesToTrack: 1
+  MaximumNumberOfTouchesToTrack: 1
+  AllowSimultaneousExecutionWith: []
+  AllowSimultaneousExecutionWithAllGestures: 0
+  RequireGestureRecognizersToFail: []
+  ClearTrackedTouchesOnEndOrFail: 0
+  MaximumPathCount: 1
+  DirectionTolerance: 0.3
+  ThresholdUnits: 0.4
+  MinimumDistanceBetweenPointsUnits: 0.1
+  SimilarityMinimum: 0.7
+  MinimumPointsToRecognize: 2
+  GestureImages:
+  - Key: HorizontalLine
+    ScorePadding: 0
+    Images: "{ new ImageGestureImage(new ulong[] { 0x000000000000FFFF, 0x000000000000FFFF,
+      0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000,
+      0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000,
+      0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000,
+      0x0000000000000000, 0x0000000000000000 }, imageWidth), \"HorizontalLine\" },\r\n"
+  - Key: VerticalLine
+    ScorePadding: 0
+    Images: "{ new ImageGestureImage(new ulong[] { 0x0000000000000003, 0x0000000000000003,
+      0x0000000000000003, 0x0000000000000003, 0x0000000000000003, 0x0000000000000003,
+      0x0000000000000003, 0x0000000000000003, 0x0000000000000003, 0x0000000000000003,
+      0x0000000000000003, 0x0000000000000003, 0x0000000000000003, 0x0000000000000003,
+      0x0000000000000003, 0x0000000000000003 }, imageWidth), \"VerticalLine\" },\r\n"
+  - Key: Square
+    ScorePadding: 0
+    Images: "{ new ImageGestureImage(new ulong[] { 0x0000000000000FFF, 0x0000000000000FFF,
+      0x0000000000000E03, 0x0000000000000E03, 0x0000000000000E03, 0x0000000000000E03,
+      0x0000000000000E03, 0x0000000000000E03, 0x0000000000000E03, 0x0000000000000E03,
+      0x0000000000000FFF, 0x0000000000000FFF, 0x0000000000000FFF, 0x0000000000000000,
+      0x0000000000000070, 0x0000000000000070 }, imageWidth), \"Square\" },\r\n{ new
+      ImageGestureImage(new ulong[] { 0x000000000000FFFF, 0x000000000000FFFF, 0x000000000000C003,
+      0x000000000000C003, 0x000000000000C003, 0x000000000000C003, 0x000000000000C003,
+      0x000000000000C007, 0x000000000000C007, 0x000000000000C007, 0x000000000000C007,
+      0x000000000000C007, 0x000000000000C007, 0x000000000000FFFF, 0x000000000000FFFF,
+      0x000000000000FFFE }, imageWidth), \"Square\" },\r\n{ new ImageGestureImage(new
+      ulong[] { 0x000000000000FFFE, 0x000000000000FFFE, 0x000000000000700E, 0x000000000000700E,
+      0x000000000000700E, 0x000000000000700E, 0x000000000000780E, 0x000000000000780E,
+      0x000000000000380E, 0x000000000000380E, 0x000000000000380E, 0x000000000000380E,
+      0x000000000000380E, 0x0000000000003FFF, 0x0000000000003FFF, 0x0000000000003FFF
+      }, imageWidth), \"Square\" },\r\n{ new ImageGestureImage(new ulong[] { 0x000000000000FFFF,
+      0x000000000000FFFF, 0x000000000000C003, 0x000000000000C003, 0x000000000000C003,
+      0x000000000000C003, 0x000000000000C003, 0x000000000000C003, 0x000000000000C003,
+      0x000000000000C003, 0x000000000000C003, 0x000000000000FFFF, 0x000000000000FFFF,
+      0x000000000000FFFF, 0x0000000000000007, 0x0000000000000007 }, imageWidth), \"Square\"
+      },\r\n{ new ImageGestureImage(new ulong[] { 0x000000000000FFFC, 0x000000000000FFFC,
+      0x000000000000C01C, 0x000000000000C01C, 0x000000000000C01C, 0x000000000000C01C,
+      0x000000000000C01C, 0x000000000000C01C, 0x000000000000C01C, 0x000000000000C01C,
+      0x000000000000C01C, 0x000000000000C01C, 0x000000000000FFFF, 0x000000000000FFFF,
+      0x000000000000FFFF, 0x000000000000001C }, imageWidth), \"Square\" },\r\n{ new
+      ImageGestureImage(new ulong[] { 0x00000000000007FF, 0x00000000000007FF, 0x0000000000000707,
+      0x0000000000000703, 0x0000000000000703, 0x0000000000000703, 0x0000000000000703,
+      0x0000000000000703, 0x0000000000000703, 0x0000000000000703, 0x0000000000000703,
+      0x0000000000000703, 0x0000000000000703, 0x0000000000000703, 0x00000000000007FF,
+      0x00000000000007FF }, imageWidth), \"Square\" },\r\n"
+  - Key: Triangle
+    ScorePadding: 0
+    Images: "{ new ImageGestureImage(new ulong[] { 0x00000000000007FF, 0x00000000000007FF,
+      0x0000000000000387, 0x00000000000003C7, 0x00000000000003CF, 0x00000000000001DF,
+      0x00000000000001FE, 0x00000000000001FC, 0x00000000000000FC, 0x00000000000000F8,
+      0x00000000000000F0, 0x00000000000000E0, 0x0000000000000000, 0x0000000000000000,
+      0x00000000000000E0, 0x00000000000000E0 }, imageWidth), \"Triangle\" },\r\n{
+      new ImageGestureImage(new ulong[] { 0x0000000000000000, 0x0000000000000000,
+      0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000,
+      0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000,
+      0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000,
+      0x0000000000000000, 0x0000000000000000 }, imageWidth), \"Triangle\" },\r\n{
+      new ImageGestureImage(new ulong[] { 0x000000000000FFFF, 0x000000000000FFFF,
+      0x000000000000F1FF, 0x000000000000F00F, 0x000000000000700F, 0x000000000000781E,
+      0x000000000000783E, 0x000000000000387C, 0x0000000000003C78, 0x0000000000003CF0,
+      0x0000000000001DF0, 0x0000000000001FE0, 0x0000000000001FC0, 0x0000000000000FC0,
+      0x0000000000000F80, 0x0000000000000F00 }, imageWidth), \"Triangle\" },\r\n{
+      new ImageGestureImage(new ulong[] { 0x000000000000FFFF, 0x000000000000FFFF,
+      0x000000000000F00F, 0x0000000000007807, 0x000000000000780F, 0x0000000000003C0F,
+      0x0000000000003E0E, 0x0000000000001E1E, 0x0000000000000F1E, 0x0000000000000F3C,
+      0x00000000000007BC, 0x00000000000007F8, 0x00000000000003F8, 0x00000000000001F8,
+      0x00000000000001F0, 0x00000000000000F0 }, imageWidth), \"Triangle\" },\r\n{
+      new ImageGestureImage(new ulong[] { 0x000000000000FFFF, 0x000000000000FFFF,
+      0x000000000000F03F, 0x000000000000F03C, 0x0000000000007878, 0x0000000000007878,
+      0x0000000000003CF0, 0x0000000000003CF0, 0x0000000000001FE0, 0x0000000000001FE0,
+      0x0000000000000FC0, 0x0000000000000FC0, 0x0000000000000780, 0x0000000000000780,
+      0x0000000000000780, 0x0000000000000000 }, imageWidth), \"Triangle\" },\r\n{
+      new ImageGestureImage(new ulong[] { 0x0000000000007FF0, 0x0000000000007FFF,
+      0x0000000000003FFF, 0x0000000000001E3F, 0x0000000000001F03, 0x0000000000000F03,
+      0x0000000000000787, 0x00000000000007C7, 0x00000000000003E7, 0x00000000000001E7,
+      0x00000000000000FF, 0x00000000000000FF, 0x000000000000007E, 0x000000000000007E,
+      0x000000000000003E, 0x000000000000001E }, imageWidth), \"Triangle\" },\r\n{
+      new ImageGestureImage(new ulong[] { 0x0000000000001FFF, 0x0000000000001FFF,
+      0x0000000000000F07, 0x0000000000000F07, 0x0000000000000707, 0x000000000000078F,
+      0x000000000000078F, 0x00000000000003CE, 0x00000000000003CE, 0x00000000000001DE,
+      0x00000000000001FE, 0x00000000000001FC, 0x00000000000000FC, 0x00000000000000FC,
+      0x0000000000000078, 0x0000000000000078 }, imageWidth), \"Triangle\" },\r\n{
+      new ImageGestureImage(new ulong[] { 0x0000000000001FFF, 0x0000000000001FFF,
+      0x0000000000000F07, 0x0000000000000F07, 0x0000000000000707, 0x000000000000078F,
+      0x000000000000078F, 0x00000000000003CE, 0x00000000000003CE, 0x00000000000001DE,
+      0x00000000000001FE, 0x00000000000001FC, 0x00000000000000FC, 0x00000000000000FC,
+      0x0000000000000078, 0x0000000000000078 }, imageWidth), \"Triangle\" },\r\n{
+      new ImageGestureImage(new ulong[] { 0x000000000000FFFF, 0x000000000000FFFF,
+      0x000000000000F87E, 0x0000000000007CFC, 0x0000000000003FF8, 0x0000000000001FE0,
+      0x0000000000000FC0, 0x0000000000000780, 0x0000000000000700, 0x0000000000000000,
+      0x0000000000000000, 0x0000000000000000, 0x0000000000000000, 0x0000000000000000,
+      0x0000000000000000, 0x0000000000000000 }, imageWidth), \"Triangle\" },\r\n"
+  LineRenderers:
+  - {fileID: 0}
+  MatchText: {fileID: 0}
+--- !u!114 &2332396184013572852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332396184013572851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c135eb4170e38804d9c8a9dd4cd0ff70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImageScript: {fileID: 2332396184013572853}
+  MatchParticleSystem: {fileID: 0}
+  AudioSourceOnMatch: {fileID: 2332396184013572747}
+--- !u!82 &2332396184013572747
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332396184013572851}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d7da806af060ff34b82f5e5b6b4b2a81, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0

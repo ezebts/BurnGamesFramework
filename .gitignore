@@ -59,5 +59,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-# Unity metadata
-*.meta
+# Unity Scenes
+*.unity
+*.unity.meta
