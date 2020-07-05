@@ -84,27 +84,25 @@ namespace BurnGames.DependencyInjection.Editor
 
                 fieldPosition.height = 20;
 
-                if(injectable.DisplayName != null)
+                if (injectable.DisplayName != null)
                 {
                     label.text = injectable.DisplayName;
                 }
 
-                var injectedReference = EditorGUI.ObjectField(fieldPosition, label, property.objectReferenceValue, typeof(Object), true);
+                injectedReferenceValue = EditorGUI.ObjectField(fieldPosition, label, property.objectReferenceValue, typeof(Object), true);
 
-                if (typeof(GameObject).IsInstanceOfType(injectedReference))
+                if (injectedReferenceValue != null && injectedReferenceValue.GetType() == typeof(GameObject))
                 {
 
-                    GameObject injectedGameObject = (GameObject)injectedReference;
+                    GameObject injectedGameObject = (GameObject)injectedReferenceValue;
 
                     injectedReferenceValue = injectedGameObject.GetComponent(injectable.InjectedType);
 
                 }
 
-                else if(!injectable.IsValid(injectedReference))
+                else if (!injectable.IsValid(injectedReferenceValue))
                 {
-
                     injectedReferenceValue = null;
-
                 }
 
                 error = false;
@@ -123,7 +121,7 @@ namespace BurnGames.DependencyInjection.Editor
             if (!error)
             {
 
-                if(injectedReferenceValue == null)
+                if (injectedReferenceValue == null)
                 {
                     ShowInfo("Must implement " + injectable.InjectedType.Name, position);
                 }
