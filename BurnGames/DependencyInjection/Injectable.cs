@@ -5,7 +5,10 @@ using UnityEngine;
 
 namespace BurnGames.DependencyInjection
 {
-
+    /// <summary>
+    /// Specifies Unity to inject an object instance of specific Type,
+    /// it could be a class or even an abstract Type. 
+    /// </summary>
     public class Injectable : PropertyAttribute
     {
 

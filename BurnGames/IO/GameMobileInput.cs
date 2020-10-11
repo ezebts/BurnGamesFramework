@@ -145,4 +145,21 @@ namespace BurnGames.IO
 
     }
 
+    public class GameMobileInputFactory : IGameInputFactory
+    {
+
+        public static GameMobileInputFactory Instance { get; } = new GameMobileInputFactory();
+
+        public IGameInput GetGameInputInstance()
+        {
+            return new GameMobileInput();
+        }
+
+        GameMobileInputFactory()
+        {
+            GameInputContext.AddGameInputProvider("mobile", this);
+        }
+
+    }
+
 }

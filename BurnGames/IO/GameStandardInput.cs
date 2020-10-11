@@ -26,4 +26,21 @@ namespace BurnGames.IO
 
     }
 
+    public class GameStandardInputFactory : IGameInputFactory
+    {
+
+        public static GameStandardInputFactory Instance { get; } = new GameStandardInputFactory();
+
+        public IGameInput GetGameInputInstance()
+        {
+            return new GameStandardInput();
+        }
+
+        GameStandardInputFactory()
+        {
+            GameInputContext.AddGameInputProvider("standard", this);
+        }
+
+    }
+
 }

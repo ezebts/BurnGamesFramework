@@ -4,54 +4,73 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using BurnGames.DependencyInjection;
+using BurnGames.IO.GestureRecognition;
+
 namespace BurnGames.IO
 {
 
-    public enum InputSystemType
+    /// <summary>
+    /// 
+    /// A generic crossplatform input system with some useful
+    /// features.
+    /// 
+    /// </summary>
+    public interface IGameInput
     {
 
-        Standard,
-        Mobile
+        int HorizontalInput { get; }
 
+        int VerticalInput { get; }
+
+        Gestures Gestures { get; }
+
+        bool Debug { get; set; }
+
+        void UpdateInputSystem();
+
+    }
+
+    public interface IGameInputFactory
+    {
+        IGameInput GetGameInputInstance();
     }
 
     public class GameInputContext
     {
 
-        public IGameInput GameInput { get; private set; }
+        readonly static Dictionary<string, IGameInputFactory> implementations = new Dictionary<string, IGameInputFactory>();
 
-        public void ChangeGameInputSystem(IGameInput newGameInput)
+        private static string ProviderKey(string providerKey)
         {
-            GameInput = newGameInput;
+            return providerKey.ToLower().Trim();
         }
 
-        public virtual GameInputContext LoadDefaultInputFor(InputSystemType type)
+        public static void AddGameInputProvider(string providerKey, IGameInputFactory provider)
+        {
+            implementations[ProviderKey(providerKey)] = provider;
+        }
+
+        /// <summary>
+        /// Gets new IGameInput instance
+        /// </summary>
+        /// <param name="providerKey">Key to look provider</param>
+        /// <exception cref="ArgumentException"></exception>
+        /// <returns>IGameInput instance</returns>
+        public IGameInput GetGameInputInstance(string providerKey)
         {
 
-            if (type == InputSystemType.Mobile)
-            {
-                GameInput = new GameMobileInput();
-            }
+            var provider = ProviderKey(providerKey);
 
-            else if (type == InputSystemType.Standard)
+            if (implementations.ContainsKey(provider))
             {
-                GameInput = new GameStandardInput();
+                return implementations[provider].GetGameInputInstance();
             }
-
             else
             {
-                throw new NotImplementedException($"Input System '{ type.ToString() }' isn't supported yet");
+                throw new ArgumentException($"Input System '{ provider.ToString() }' isn't supported yet", nameof(providerKey));
             }
 
-            return this;
-
-        }
-
-        public GameInputContext() { }
-
-        public GameInputContext(IGameInput gameInput)
-        {
-            GameInput = gameInput;
         }
 
     }

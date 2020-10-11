@@ -127,7 +127,7 @@ namespace BurnGames.DependencyInjection.Editor
                 }
                 else
                 {
-                    ShowInfo(injectable.InjectedType.Name + " instance injected", position, active: true);
+                    ShowInfo("Injected [" + injectedReferenceValue.ToString() + "]", position, active: true);
                 }
 
             }
