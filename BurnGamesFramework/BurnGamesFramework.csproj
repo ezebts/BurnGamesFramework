@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1264E504-3E07-4B05-A696-E4D50E60D303}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BurnGamesFramework</RootNamespace>
+    <AssemblyName>BurnGamesFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\Unity\2019.4.10f1\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataAccess\DataAccessExtensions.cs" />
+    <Compile Include="DataAccess\DataProviderAttribute.cs" />
+    <Compile Include="DataAccess\Model.cs" />
+    <Compile Include="DataAccess\ModelCollection.cs" />
+    <Compile Include="DependencyInjection\Extensions\ObjectExtensions.cs" />
+    <Compile Include="DependencyInjection\Injectable.cs" />
+    <Compile Include="Events\GameEvent.cs" />
+    <Compile Include="Events\GameEventListener.cs" />
+    <Compile Include="IO\BaseGameInput.cs" />
+    <Compile Include="IO\GameInputContext.cs" />
+    <Compile Include="IO\GameMobileInput.cs" />
+    <Compile Include="IO\GameStandardInput.cs" />
+    <Compile Include="IO\Gestures\Gesture.cs" />
+    <Compile Include="IO\Gestures\GestureFactory.cs" />
+    <Compile Include="IO\Gestures\GestureMatch.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataAccess\UnityEditorModelCollection.cs" />
+    <Compile Include="Utils\ITicker.cs" />
+    <Compile Include="Utils\Ticker.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

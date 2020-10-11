@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BF65071D-0BF8-4E89-82E8-0C4B50A4500C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BurnGamesFramework.ThirdParty</RootNamespace>
+    <AssemblyName>BurnGamesFramework.ThirdParty</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEditor">
+      <HintPath>..\..\..\..\..\Unity\2019.4.10f1\Editor\Data\Managed\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\Unity\2019.4.10f1\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Scripts\DemoAsteroidScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Scripts\DemoScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Scripts\DemoScript3DOrbit.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Scripts\DemoScriptComponent.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Scripts\DemoScriptDPad.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Scripts\DemoScriptDragSwipe.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Scripts\DemoScriptDynamicGrid.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Scripts\DemoScriptImage.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Scripts\DemoScriptJoystick.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Scripts\DemoScriptMultiDrag.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Scripts\DemoScriptMultiFingerTap.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Scripts\DemoScriptOneFinger.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Scripts\DemoScriptPan.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Scripts\DemoScriptPlatformSpecificView.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Scripts\DemoScriptRaycast.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Scripts\DemoScriptSwipe.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Scripts\DemoScriptTapAndDoubleTap.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Scripts\DemoScriptZoomableScrollView.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Scripts\DemoScriptZoomPanCamera.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\FingersBackend.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\FingersCrossPlatformInputReflectionScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\FingersDragDropComponentScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\FingersFirstPersonControllerScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\FingersImageGestureHelperComponentScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\FingersJoystickAnywhereComponentScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\FingersMultiDragComponentScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\FingersPanOrbitComponentScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\FingersPanRotateScaleComponentScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\FingersPlatformMoveJumpComponentScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\FingersRotateOrbitComponentScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\FingersScrollViewComponentScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\FingersThirdPersonControllerScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\FingersZoomPanCameraComponentScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\GestureRecognizerComponentScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\ImageGestureRecognizerComponentScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\LongPressGestureRecognizerComponentScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\OneTouchRotateGestureRecognizerComponentScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\OneTouchScaleGestureRecognizerComponentScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\PanGestureRecognizerComponentScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\RotateGestureRecognizerComponentScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\ScaleGestureRecognizerComponentScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\SwipeGestureRecognizerComponentScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\TapGestureRecognizerComponentScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Controls\FingersDPadScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Controls\FingersImageAutomationScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Controls\FingersJoystickScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\FingersScript.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Gestures\DeviceInfo.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Gestures\GestureRecognizer.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Gestures\ImageGestureRecognizer.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Gestures\LongPressGestureRecognizer.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Gestures\OneTouchRotateGestureRecognizer.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Gestures\OneTouchScaleGestureRecognizer.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Gestures\PanGestureRecognizer.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Gestures\RotateGestureRecognizer.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Gestures\ScaleGestureRecognizer.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Gestures\SwipeGestureRecognizer.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Gestures\TapGestureRecognizer.cs" />
+    <Compile Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Other\FingersUtilityMethodsScript.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BurnGamesFramework\BurnGamesFramework.csproj">
+      <Project>{1264e504-3e07-4b05-a696-e4d50e60d303}</Project>
+      <Name>BurnGamesFramework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoScene.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoScene3DOrbit.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoSceneCanvasCameraSpace.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoSceneComponents.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoSceneDPad.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoSceneDragDrop.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoSceneDragSwipe.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoSceneFirstPersonController.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoSceneImage.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoSceneJoystick.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoSceneMultiDrag.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoSceneMultiFingerTap.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoSceneOneFinger.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoScenePan.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoScenePanRotateScaleManyWithOneGesture.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoScenePanScaleRotate.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoScenePlatformMoveJump.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoScenePlatformSpecificView.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoSceneRotateOrbit.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoSceneSwipe.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoSceneTapAndDoubleTap.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoSceneThirdPersonController.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoSceneUIPlus3DElements.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoSceneZoomableScrollView.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\DemoSceneZoomPanCamera.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Main Camera.prefab" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Resources\FingersAsteroid.prefab" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Resources\FingersCrateMaterial.mat" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Resources\FingersCratePhysicsMaterial.physicMaterial" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Resources\FingersEarthMaterial.mat" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Resources\FingersGrassMaterial.mat" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Resources\FingersGroundPhysicsMaterial.physicMaterial" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Resources\FingersPlayerPhysicsMaterial.physicMaterial" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\FingersDPadPrefab.prefab" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\FingersFirstPersonPlayer.prefab" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\FingersJoystickPrefab.prefab" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\FingersThirdPersonPlayer.prefab" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Material\FingersLineMaterial.mat" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Resources\FingersScriptPrefab.prefab" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Scenes\FingersImageAutomationScene.unity" />
+    <None Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Components\SceneTimeline.playable" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Resources\FingersAsteroids.png" />
+    <Content Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Resources\FingersBlackPixel.png" />
+    <Content Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Resources\FingersCard_AceOfSpades.png" />
+    <Content Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Resources\FingersCard_KingOfDiamonds.png" />
+    <Content Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Resources\FingersCard_QueenOfHearts.png" />
+    <Content Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Resources\FingersCrateTexture.jpg" />
+    <Content Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Resources\FingersEarthTexture.png" />
+    <Content Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Resources\FingersGrassTexture.jpg" />
+    <Content Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Resources\FingersPlatform.png" />
+    <Content Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Resources\FingersRotateIcon.png" />
+    <Content Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Resources\FingersScaleIcon.png" />
+    <Content Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Resources\FingersStarFieldTexture.jpg" />
+    <Content Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Demo\Resources\FingersSuccess.wav" />
+    <Content Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Script\Other\XamarinAndroidTouchAdapter.txt" />
+    <Content Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Textures\DPad\DPadBackground-Grey.png" />
+    <Content Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Textures\DPad\DPadCenterSelected-Grey.png" />
+    <Content Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Textures\DPad\DPadDownSelected-Grey.png" />
+    <Content Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Textures\DPad\DPadLeftSelected-Grey.png" />
+    <Content Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Textures\DPad\DPadRightSelected-Grey.png" />
+    <Content Include="IO\GestureRecognition\Backends\FingersBackend\Fingers\Prefab\Textures\DPad\DPadUpSelected-Grey.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
